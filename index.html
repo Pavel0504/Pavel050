@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/image/fav/1.png" />
+    <link rel="shortcut icon" href="/image/fav/1.png" />
+    <title>Code Engineer</title>
+  </head>
+  <body>
+    <div id="page-preloader" class="preloader">
+      <div class="sharingan">
+        <div class="inner-ring">
+          <div class="tomoe"></div>
+          <div class="tomoe"></div>
+          <div class="tomoe"></div>
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+    <div class="header">
+      <img src="/image/Wolf.png" alt="" />
+      <h1 class="neon">
+        C<span class="delay1">O</span>DE <span class="delay2">E</span>NGI<span
+          class="delay3"
+          >N</span
+        >EER
+      </h1>
+    </div>
+    <!--<div class="hueta">
+      <div class="snow"></div>
+    </div>-->
+    <header id="hex-grid">
+      <div class="light"></div>
+      <div class="grid"></div>
+    </header>
+    <script>
+      let counter = 1;
+      let faviconImgs = 8;
+      let favicons = document.querySelectorAll("link");
+
+      function animateFavicon() {
+        favicons.forEach((item) => {
+          if (item.getAttribute("rel").indexOf("icon") >= 0) {
+            item.setAttribute("href", "/image/fav/" + counter + ".png");
+          }
+        });
+        counter++;
+        if (counter == faviconImgs) {
+          counter = 1;
+        }
+      }
+
+      setInterval(animateFavicon, 700);
+    </script>
+    <script src="main.js"></script>
+    <script src="preloader.js"></script>
+  </body>
+</html>
