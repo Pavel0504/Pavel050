@@ -1,7 +1,9 @@
-const light = document.querySelector(".light");
-const grid = document.querySelector("#hex-grid");
+const grids = document.querySelectorAll("#hex-grid");
 
-grid.addEventListener("mousemove", function (e) {
-    light.style.left = `${e.clientX}px`;
-    light.style.top = `${e.clientY}px`;
+grids.forEach((grid, index) => {
+    const light = grid.getElementsByClassName("light").item(0);
+    grid.addEventListener("mousemove", (e) => {
+        light.style.left = `${e.clientX}px`;
+        light.style.top = `${e.clientY}px`;
+    });
 });
