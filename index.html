@@ -5,40 +5,145 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="navbar.css" />
     <link rel="icon" href="/image/fav/1.png" />
     <link rel="shortcut icon" href="image/fav/1.png" />
     <title>Code Engineer</title>
   </head>
   <body>
-    <!-- Preloader -->
-    <div id="page-preloader" class="preloader">
-      <div class="sharingan">
-        <div class="inner-ring">
-          <div class="tomoe"></div>
-          <div class="tomoe"></div>
-          <div class="tomoe"></div>
-          <div class="circle"></div>
-        </div>
-      </div>
-    </div>
-    <!-- Header -->
-    <div class="header">
-      <img src="/image/Wolf.png" alt="" />
-      <h1 class="neon">
-        C<span class="delay1">O</span>DE <span class="delay2">E</span>NGI<span
-          class="delay3"
-          >N</span
-        >EER
-      </h1>
-    </div>
-    <!--<div class="hueta">
+    <div class="container">
+      <div class="screen" id="Home">
+        <div class="main">
+          <!-- Preloader -->
+          <div id="page-preloader" class="preloader">
+            <div class="sharingan">
+              <div class="inner-ring">
+                <div class="tomoe"></div>
+                <div class="tomoe"></div>
+                <div class="tomoe"></div>
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Header -->
+          <div class="header">
+            <img src="/image/Wolf.png" alt="" />
+            <h1 class="neon">
+              C<span class="delay1">O</span>DE
+              <span class="delay2">E</span>NGI<span class="delay3">N</span>EER
+            </h1>
+            <div class="burger">
+              <div class="bar"></div>
+            </div>
+          </div>
+          <!--<div class="hueta">
       <div class="snow"></div>
     </div>-->
-    <!-- Background -->
-    <header id="hex-grid">
-      <div class="light"></div>
-      <div class="grid"></div>
-    </header>
+          <!-- Background -->
+          <header id="hex-grid">
+            <div class="light"></div>
+            <div class="grid"></div>
+          </header>
+        </div>
+        <div class="shadow one"></div>
+        <div class="shadow two"></div>
+      </div>
+
+      <div class="screen" id="Team">
+        <div class="main">
+          <!-- Header -->
+          <div class="header">
+            <img src="/image/Wolf.png" alt="" />
+            <h1 class="neon">
+              C<span class="delay1">O</span>DE
+              <span class="delay2">E</span>NGI<span class="delay3">N</span>EER
+            </h1>
+            <div class="burger">
+              <div class="bar"></div>
+            </div>
+          </div>
+          <!--<div class="hueta">
+      <div class="snow"></div>
+    </div>-->
+          <!-- Background -->
+          <header id="hex-grid">
+            <div class="light"></div>
+            <div class="grid"></div>
+          </header>
+        </div>
+        <div class="shadow one"></div>
+        <div class="shadow two"></div>
+      </div>
+
+      <div class="screen" id="Portfolio">
+        <div class="main">
+          <!-- Header -->
+          <div class="header">
+            <img src="/image/Wolf.png" alt="" />
+            <h1 class="neon">
+              C<span class="delay1">O</span>DE
+              <span class="delay2">E</span>NGI<span class="delay3">N</span>EER
+            </h1>
+            <div class="burger">
+              <div class="bar"></div>
+            </div>
+          </div>
+          <!--<div class="hueta">
+      <div class="snow"></div>
+    </div>-->
+          <!-- Background -->
+          <header id="hex-grid">
+            <div class="light"></div>
+            <div class="grid"></div>
+          </header>
+        </div>
+        <div class="shadow one"></div>
+        <div class="shadow two"></div>
+      </div>
+
+      <div class="screen" id="Contacts">
+        <div class="main">
+          <!-- Header -->
+          <div class="header">
+            <img src="/image/Wolf.png" alt="" />
+            <h1 class="neon">
+              C<span class="delay1">O</span>DE
+              <span class="delay2">E</span>NGI<span class="delay3">N</span>EER
+            </h1>
+            <div class="burger">
+              <div class="bar"></div>
+            </div>
+          </div>
+          <!--<div class="hueta">
+      <div class="snow"></div>
+    </div>-->
+          <!-- Background -->
+          <header id="hex-grid">
+            <div class="light"></div>
+            <div class="grid"></div>
+          </header>
+        </div>
+        <div class="shadow one"></div>
+        <div class="shadow two"></div>
+      </div>
+
+      <div class="links">
+        <ul>
+          <li>
+            <a href="#" data-link="Home" class="link" style="--i: .1s">Home</a>
+          </li>
+          <li>
+            <a href="#" data-link="Team" class="link" style="--i: .15s">Team</a>
+          </li>
+          <li>
+            <a href="#" data-link="Portfolio" class="link" style="--i: .2s">Portfolio</a>
+          </li>
+          <li>
+            <a href="#" data-link="Contacts" class="link" style="--i: .25s">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <script>
       let counter = 1;
       let faviconImgs = 8;
@@ -58,6 +163,7 @@
 
       setInterval(animateFavicon, 700);
     </script>
+    <script src="navbar.js"></script>
     <script src="main.js"></script>
     <script src="preloader.js"></script>
   </body>
