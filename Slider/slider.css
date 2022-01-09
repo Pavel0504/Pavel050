@@ -696,8 +696,8 @@ body {
           transform-origin: center bottom;
   -webkit-transform: rotateX(-90deg) translateY(100%);
           transform: rotateX(-90deg) translateY(100%);
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .colorful-switch {

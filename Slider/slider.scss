@@ -635,7 +635,7 @@ $cubOut: cubic-bezier(.67, -0.16, .47, 1.61);
     &:hover {
         transform-origin: center bottom;
         transform: rotateX(-90deg) translateY(100%);
-        transition: 2s;
+        transition: 1s;
     }
 }
 
