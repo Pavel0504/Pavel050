@@ -1,11 +1,10 @@
 //Navbar
 .burger {
-    top: 5%;
+    top: 3%;
     right: 8%;
     position: fixed;
     height: 6rem;
     width: 3rem;
-    cursor: pointer;
     display: flex;
     align-items: center;
 
@@ -38,6 +37,8 @@
 
 //Page
 .container {
+    cursor: url("/image/cursor.png"), default;
+    z-index: -2;
     transform-style: preserve-3d;
 
     // Main
@@ -71,10 +72,14 @@
 
     //links
     .links {
+        font-family: 'Poppins';
+        line-height: 3;
+        font-weight: 1em;
         position: absolute;
         width: 30%;
         right: 0;
         top: 20%;
+        cursor: url("/image/cursor.png", default);
         height: 50vh;
         z-index: 0;
         display: flex;
@@ -83,9 +88,10 @@
 
         a {
             text-decoration: none;
+            cursor: url("/image/cursor.png"), default;
             color: aliceblue;
             padding: .07rem 0;
-            font-size: 1rem;
+            font-size: 1.3rem;
             display: inline-block;
             font-weight: 300;
             text-transform: uppercase;
@@ -94,6 +100,10 @@
             opacity: 0;
             transform: translateY(10px);
             animation: hide 0.5s forwards ease;
+        }
+
+        a:hover {
+            color: blue;
         }
 
         ul {
@@ -106,6 +116,8 @@
 
 //Animation
 .container.active {
+    filter: drop-shadow(0px 0px 15px rgb(0, 234, 255));
+
     .bar {
         transform: rotate(360deg);
         background-color: transparent;
@@ -121,7 +133,6 @@
 
     .main {
         animation: main-animation 1s ease;
-        cursor: pointer;
         transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
 
         &:hover {

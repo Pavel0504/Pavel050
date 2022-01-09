@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="/Navbar/navbar.css" />
+    <link rel="stylesheet" href="/Slider/slider.css" />
     <link rel="icon" href="/image/fav/1.png" />
     <link rel="shortcut icon" href="image/fav/1.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Code Engineer</title>
   </head>
   <body>
@@ -27,7 +34,7 @@
           </div>
           <!-- Header -->
           <div class="header">
-            <img src="/image/Wolf.png" alt="" />
+            <img class="logo" src="/image/Wolf.png" alt="" />
             <h1 class="neon">
               C<span class="delay1">O</span>DE
               <span class="delay2">E</span>NGI<span class="delay3">N</span>EER
@@ -36,7 +43,8 @@
               <div class="bar"></div>
             </div>
           </div>
-          <!--<div class="hueta">
+          <!-- Snow -->
+          <!--  <div class="hueta">
       <div class="snow"></div>
     </div>-->
           <!-- Background -->
@@ -53,7 +61,7 @@
         <div class="main">
           <!-- Header -->
           <div class="header">
-            <img src="/image/Wolf.png" alt="" />
+            <img class="logo" src="/image/Wolf.png" alt="" />
             <h1 class="neon">
               C<span class="delay1">O</span>DE
               <span class="delay2">E</span>NGI<span class="delay3">N</span>EER
@@ -63,23 +71,177 @@
             </div>
           </div>
           <!--<div class="hueta">
-      <div class="snow"></div>
-    </div>-->
-          <!-- Background -->
-          <header id="hex-grid">
+           <div class="snow"></div>
+           </div>-->
+            <!-- Background -->
+         <!--<header id="hex-grid">
             <div class="light"></div>
             <div class="grid"></div>
-          </header>
+          </header>-->
+          <!-- Slider -->
+          <div class="demo-cont">
+            <div class="fnc-slider example-slider">
+              <div class="exit">Exit to menu</div>
+              <div class="fnc-slider__slides">
+                <div class="fnc-slide m--blend-green m--active-slide">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span>Black</span>
+                        </div>
+                        <div class="fnc-slide__heading-line">
+                          <span>Widow</span>
+                        </div>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Credits
+                        <span data-text="Credits">Credits</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- slide end -->
+                <!-- slide start -->
+                <div class="fnc-slide m--blend-dark">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span>Captain</span>
+                        </div>
+                        <div class="fnc-slide__heading-line">
+                          <span>America</span>
+                        </div>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Credits
+                        <span data-text="Credits">Credits</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- slide end -->
+                <!-- slide start -->
+                <div class="fnc-slide m--blend-red">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span>Iron</span>
+                        </div>
+                        <div class="fnc-slide__heading-line">
+                          <span>Man</span>
+                        </div>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Credits
+                        <span data-text="Credits">Credits</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- slide end -->
+                <!-- slide start -->
+                <div class="fnc-slide m--blend-blue">
+                  <div class="fnc-slide__inner">
+                    <div class="fnc-slide__mask">
+                      <div class="fnc-slide__mask-inner"></div>
+                    </div>
+                    <div class="fnc-slide__content">
+                      <h2 class="fnc-slide__heading">
+                        <div class="fnc-slide__heading-line">
+                          <span>Thor</span>
+                        </div>
+                        <div class="fnc-slide__heading-line">
+                          <span>Just Thor</span>
+                        </div>
+                      </h2>
+                      <button type="button" class="fnc-slide__action-btn">
+                        Credits
+                        <span data-text="Credits">Credits</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- slide end -->
+              </div>
+              <nav class="fnc-nav">
+                <div class="fnc-nav__bgs">
+                  <div class="fnc-nav__bg m--navbg-green m--active-nav-bg"></div>
+                  <div class="fnc-nav__bg m--navbg-dark"></div>
+                  <div class="fnc-nav__bg m--navbg-red"></div>
+                  <div class="fnc-nav__bg m--navbg-blue"></div>
+                </div>
+                <div class="fnc-nav__controls">
+                  <button class="fnc-nav__control">
+                    Black Widow
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control">
+                    Captain America
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control">
+                    Iron Man
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                  <button class="fnc-nav__control">
+                    Thor
+                    <span class="fnc-nav__control-progress"></span>
+                  </button>
+                </div>
+              </nav>
+            </div>
+            <!-- slider end -->
+            <div class="demo-cont__credits">
+              <div class="demo-cont__credits-close"></div>
+              <h2 class="demo-cont__credits-heading">Made by</h2>
+              <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/142996/profile/profile-512_5.jpg" alt="" class="demo-cont__credits-img" />
+              <h3 class="demo-cont__credits-name">Nikolay Talanov</h3>
+              <a href="https://codepen.io/suez/" target="_blank" class="demo-cont__credits-link">My codepen</a>
+              <a href="https://twitter.com/NikolayTalanov" target="_blank" class="demo-cont__credits-link">My twitter</a>
+              <h2 class="demo-cont__credits-heading">Based on</h2>
+              <a href="https://dribbble.com/shots/2375246-Fashion-Butique-slider-animation" target="_blank" class="demo-cont__credits-link">Concept by Kreativa Studio</a>
+              <h4 class="demo-cont__credits-blend">Global Blend Mode</h4>
+              <div class="colorful-switch">
+                <input type="checkbox" class="colorful-switch__checkbox js-activate-global-blending" id="colorful-switch-cb" />
+                <label class="colorful-switch__label" for="colorful-switch-cb">
+                  <span class="colorful-switch__bg"></span>
+                  <span class="colorful-switch__dot"></span>
+                  <span class="colorful-switch__on">
+                    <span class="colorful-switch__on__inner"></span>
+                  </span>
+                  <span class="colorful-switch__off"></span>
+                </label>
+              </div>
+            </div>
+          </div>     
+             
+                    
+
+
+
+
         </div>
         <div class="shadow one"></div>
         <div class="shadow two"></div>
       </div>
-
-      <div class="screen" id="Portfolio">
+      
+      <div class="screen" id="Projects">
         <div class="main">
           <!-- Header -->
           <div class="header">
-            <img src="/image/Wolf.png" alt="" />
+            <img class="logo" src="/image/Wolf.png" alt="" />
             <h1 class="neon">
               C<span class="delay1">O</span>DE
               <span class="delay2">E</span>NGI<span class="delay3">N</span>EER
@@ -105,7 +267,7 @@
         <div class="main">
           <!-- Header -->
           <div class="header">
-            <img src="/image/Wolf.png" alt="" />
+            <img class="logo" src="/image/Wolf.png" alt="" />
             <h1 class="neon">
               C<span class="delay1">O</span>DE
               <span class="delay2">E</span>NGI<span class="delay3">N</span>EER
@@ -130,16 +292,22 @@
       <div class="links">
         <ul>
           <li>
-            <a href="#" data-link="Home" class="link" style="--i: .1s">Home</a>
+            <a href="#" data-link="Home" class="link" style="--i: 0.1s">Home</a>
           </li>
           <li>
-            <a href="#" data-link="Team" class="link" style="--i: .15s">Team</a>
+            <a href="#" data-link="Team" class="link" style="--i: 0.15s"
+              >Team</a
+            >
           </li>
           <li>
-            <a href="#" data-link="Portfolio" class="link" style="--i: .2s">Portfolio</a>
+            <a href="#" data-link="Projects" class="link" style="--i: 0.2s"
+              >Projects</a
+            >
           </li>
           <li>
-            <a href="#" data-link="Contacts" class="link" style="--i: .25s">Contacts</a>
+            <a href="#" data-link="Contacts" class="link" style="--i: 0.25s"
+              >Contacts</a
+            >
           </li>
         </ul>
       </div>
@@ -163,8 +331,10 @@
 
       setInterval(animateFavicon, 700);
     </script>
-    <script src="navbar.js"></script>
-    <script src="main.js"></script>
-    <script src="preloader.js"></script>
+    <script src="/JS/navbar.js"></script>
+    <script src="/JS/main.js"></script>
+    <script src="/JS/preloader.js"></script>
+    <script src="/JS/slider.js"></script>
+    <script src="/JS/sliderExit.js"></script>
   </body>
 </html>

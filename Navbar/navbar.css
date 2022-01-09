@@ -1,10 +1,9 @@
 .burger {
-  top: 5%;
+  top: 3%;
   right: 8%;
   position: fixed;
   height: 6rem;
   width: 3rem;
-  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,6 +42,8 @@
 }
 
 .container {
+  cursor: url("/image/cursor.png"), default;
+  z-index: -2;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
@@ -80,10 +81,14 @@
 }
 
 .container .links {
+  font-family: 'Poppins';
+  line-height: 3;
+  font-weight: 1em;
   position: absolute;
   width: 30%;
   right: 0;
   top: 20%;
+  cursor: url("/image/cursor.png", default);
   height: 50vh;
   z-index: 0;
   display: -webkit-box;
@@ -99,9 +104,10 @@
 
 .container .links a {
   text-decoration: none;
+  cursor: url("/image/cursor.png"), default;
   color: aliceblue;
   padding: .07rem 0;
-  font-size: 1rem;
+  font-size: 1.3rem;
   display: inline-block;
   font-weight: 300;
   text-transform: uppercase;
@@ -115,8 +121,17 @@
           animation: hide 0.5s forwards ease;
 }
 
+.container .links a:hover {
+  color: blue;
+}
+
 .container .links ul {
   list-style: none;
+}
+
+.container.active {
+  -webkit-filter: drop-shadow(0px 0px 15px #00eaff);
+          filter: drop-shadow(0px 0px 15px #00eaff);
 }
 
 .container.active .bar {
@@ -138,7 +153,6 @@
 .container.active .main {
   -webkit-animation: main-animation 1s ease;
           animation: main-animation 1s ease;
-  cursor: pointer;
   -webkit-transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
           transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
 }
