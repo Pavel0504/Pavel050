@@ -80,9 +80,7 @@ html ::-webkit-scrollbar-thumb:hover {
   cursor: url("/image/cursor.png"), default;
   height: 50vh;
   z-index: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

@@ -2,10 +2,12 @@ const burgers = document.querySelectorAll(".burger");
 const container = document.querySelector(".container");
 const screens = document.querySelectorAll(".screen");
 const footer = document.querySelector(".footer");
+const linkv = document.querySelector(".links");
 
 burgers.forEach((burger) =>
   burger.addEventListener("click", () => {
     container.classList.toggle("active");
+    linkv.style.display = "flex";
   })
 );
 
@@ -30,6 +32,7 @@ function changeBg() {
     link.addEventListener("click", (e) => {
       e.preventDefault();
       container.classList.toggle("active");
+      linkv.style.display = "none";
     });
   });
 
