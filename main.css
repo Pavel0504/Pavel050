@@ -250,3 +250,72 @@ img:hover {
     background: linear-gradient(90deg, #335bf4 0%, #2ae9c9 100%);
     z-index: 4;
 }
+
+/*Flip Card*/
+.osnova {
+    position: absolute;
+    z-index: 102;
+    width: 800px;
+    top: 30%;
+    left: 30%;
+}
+
+.flip-box {
+    background-color: transparent;
+    width: 800px;
+    height: 500px;
+    perspective: 1000px;
+}
+
+.osnova::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    background: #000;
+    filter: blur(35px);
+    border-radius: 25px;
+    transition: 1.2s;
+    z-index: -1;
+    perspective: 0px;
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+}
+
+.osnova:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+.osnova:hover::after {
+    transform: translate(-50%, -50%)
+    rotateY(-180deg);
+}
+
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    backface-visibility: hidden;
+    border-radius: 25px;
+}
+
+.flip-box-front {
+    background: url(/image/front.gif) center;
+}
+
+.flip-box-back {
+    background: url(/image/back.gif) center;
+    transform: rotateY(180deg);
+}
