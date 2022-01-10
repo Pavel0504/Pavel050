@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="/Navbar/navbar.css" />
+    <link rel="stylesheet" href="/Text/text.css" />
     <link rel="stylesheet" href="/Slider/slider.css" />
+    <link rel="stylesheet" href="/Modal/modal.css" />
     <link rel="icon" href="/image/fav/1.png" />
     <link rel="shortcut icon" href="image/fav/1.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,15 +45,60 @@
               <div class="bar"></div>
             </div>
           </div>
+          <!-- ModalWindow -->
+          <div class="card">
+            <p>
+              Здарова Пидр, я тебе сейчас докажу, что ты ебучая лошара, жми на
+              кнопку, если не ссыкло
+            </p>
+
+            <button class="open">Modal</button>
+          </div>
+
+          <div class="modals">
+            <div class="modal-content">
+              <div class="modal-wrap">
+                <div class="wrapper">
+                  <p id="text" class="text">
+                    Бляяя, ну ктоб сомневался что ты поведёшься, вот я и доказал, что ты лох ебаный, тебя обоссать мало.
+                  </p>
+                </div>
+                <button class="close" onclick="clearFields()" value="Clear">Close</button>
+              </div>
+            </div>
+          </div>
           <!-- Snow -->
           <!--  <div class="hueta">
-      <div class="snow"></div>
-    </div>-->
+          <div class="snow"></div>
+          </div>-->
           <!-- Background -->
           <header id="hex-grid">
             <div class="light"></div>
             <div class="grid"></div>
           </header>
+          <!-- Footer -->
+          <div class="footer">
+            <!-- Right Text -->
+            <div class="info">
+              <h1 class="A">Code</h1>
+              <h1 class="B">Engineer</h1>
+            </div>
+            <!-- SocialMediaButtons -->
+            <div class="buttons">
+              <a href="#" class="btn">
+                <i class="fab fa-reddit-alien"></i>
+              </a>
+              <a href="#" class="btn">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="btn">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="btn">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
         </div>
         <div class="shadow one"></div>
         <div class="shadow two"></div>
@@ -351,7 +398,13 @@
       setInterval(animateFavicon, 700);
     </script>
     <script src="/JS/navbar.js"></script>
+    <script src="/JS/text.js"></script>
+    <script src="/JS/modal.js"></script>
     <script src="/JS/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ccbd4d6bc1.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="/JS/preloader.js"></script>
     <script src="/JS/slider.js"></script>
     <script src="/JS/sliderExit.js"></script>

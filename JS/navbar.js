@@ -1,20 +1,21 @@
 const burgers = document.querySelectorAll(".burger");
 const container = document.querySelector(".container");
 const screens = document.querySelectorAll(".screen");
+const footer = document.querySelector(".footer");
 
 burgers.forEach((burger) =>
-    burger.addEventListener("click", () => {
-        container.classList.toggle("active");
-    })
+  burger.addEventListener("click", () => {
+    container.classList.toggle("active");
+  })
 );
 
 function replaceBg(id) {
-    const Bg = document.getElementById(id);
-    screens.forEach((screen) => {
-        if (screen.id == id) return;
-        screen.style.display = "none";
-    });
-    Bg.style.display = "block";
+  const Bg = document.getElementById(id);
+  screens.forEach((screen) => {
+    if (screen.id == id) return;
+    screen.style.display = "none";
+  });
+  Bg.style.display = "block";
 }
 
 function changeBg() {

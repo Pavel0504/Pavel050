@@ -1,3 +1,24 @@
+html ::-webkit-scrollbar {
+  width: 20px;
+  background-color: #101124;
+}
+
+html ::-webkit-scrollbar-track {
+  border: 5px solid rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+}
+
+html ::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, right top, from(#00eaff), to(#001aff));
+  background: linear-gradient(90deg, #00eaff, #001aff);
+  border-radius: 15px;
+}
+
+html ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #00eaff, #001aff);
+}
+
 .burger {
   top: 3%;
   right: 8%;
@@ -48,38 +69,6 @@
           transform-style: preserve-3d;
 }
 
-.container .main {
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
-.container .shadow {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  background: snow;
-}
-
-.container .shadow.one {
-  z-index: -1;
-  opacity: .15;
-}
-
-.container .shadow.two {
-  z-index: -2;
-  opacity: .1;
-}
-
 .container .links {
   font-family: 'Poppins';
   line-height: 3;
@@ -88,7 +77,7 @@
   width: 30%;
   right: 0;
   top: 20%;
-  cursor: url("/image/cursor.png", default);
+  cursor: url("/image/cursor.png"), default;
   height: 50vh;
   z-index: 0;
   display: -webkit-box;
@@ -129,6 +118,157 @@
   list-style: none;
 }
 
+.container .main {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.container .main .footer {
+  width: 100%;
+  height: 10em;
+  background-color: #000;
+  bottom: 0;
+  z-index: 100;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .main .footer .info {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  bottom: 50%;
+  line-height: 0px;
+  -webkit-filter: contrast(10);
+          filter: contrast(10);
+}
+
+.container .main .footer .info h1 {
+  width: 100%;
+  padding-left: 1em;
+  position: absolute;
+  font-size: 100px;
+  margin: 0;
+  color: black;
+  text-shadow: 4px 4px 0px #6bfff8, -4px -4px 0px #6bfff8, -4px 4px 0px #6bfff8, 4px -4px 0px #6bfff8;
+}
+
+.container .main .footer .info .A {
+  animation: anim 5s infinite alternate-reverse;
+}
+
+.container .main .footer .info .B {
+  -webkit-animation: anim 5s infinite alternate;
+          animation: anim 5s infinite alternate;
+}
+
+.container .main .footer .buttons {
+  position: fixed;
+  right: 1em;
+  outline: 0;
+  text-align: center;
+  background: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1em auto;
+  -webkit-filter: drop-shadow(2px 4px 6px blue);
+          filter: drop-shadow(2px 4px 6px blue);
+  width: 40em;
+  height: 6em;
+  border-radius: 15px;
+  -webkit-box-shadow: inset -6px -6px 9px #ffffff80, inset 6px 6px 9px #4646461f;
+          box-shadow: inset -6px -6px 9px #ffffff80, inset 6px 6px 9px #4646461f;
+}
+
+.container .main .footer .buttons .btn {
+  font-size: 4em;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: #03a9f4;
+  -webkit-filter: drop-shadow(2px 4px 6px blue);
+          filter: drop-shadow(2px 4px 6px blue);
+  border-radius: 15px;
+}
+
+.container .main .footer .buttons .btn:hover {
+  -webkit-box-shadow: inset -11px -11px 14px rgba(255, 255, 255, 0.623), inset 12px 12px 14px rgba(70, 70, 70, 0.12);
+          box-shadow: inset -11px -11px 14px rgba(255, 255, 255, 0.623), inset 12px 12px 14px rgba(70, 70, 70, 0.12);
+  border-bottom: 2px solid;
+}
+
+.container .main .footer .buttons .btn:nth-child(1):hover {
+  color: #ff4500;
+  border-bottom-color: #ff4500;
+}
+
+.container .main .footer .buttons .btn:nth-child(2):hover {
+  color: #fffc00;
+  border-bottom-color: #fffc00;
+}
+
+.container .main .footer .buttons .btn:nth-child(3):hover {
+  color: #0051ff;
+  border-bottom-color: #0051ff;
+}
+
+.container .main .footer .buttons .btn:nth-child(4):hover {
+  color: #c32aa2;
+  border-bottom-color: #c32aa2;
+}
+
+.container .main .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: snow;
+}
+
+.container .main .shadow.one {
+  z-index: -1;
+  opacity: .15;
+}
+
+.container .main .shadow.two {
+  z-index: -2;
+  opacity: .1;
+}
+
 .container.active {
   -webkit-filter: drop-shadow(0px 0px 15px #00eaff);
           filter: drop-shadow(0px 0px 15px #00eaff);
@@ -165,6 +305,10 @@
 .container.active .main:hover + .shadow.one {
   -webkit-transform: perspective(1300px) rotateY(20deg) translateZ(230px) scale(0.5);
           transform: perspective(1300px) rotateY(20deg) translateZ(230px) scale(0.5);
+}
+
+.container.active .main .footer {
+  display: none;
 }
 
 .container.active .shadow.one {
@@ -317,6 +461,44 @@
     opacity: 1;
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes anim {
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(28px);
+            filter: blur(28px);
+  }
+  10% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(6px);
+            filter: blur(6px);
+  }
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(28px);
+            filter: blur(28px);
+  }
+  10% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(6px);
+            filter: blur(6px);
   }
 }
 /*# sourceMappingURL=navbar.css.map */
