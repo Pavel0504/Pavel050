@@ -90,6 +90,8 @@
 }
 
 .card {
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 20px;
   background: black;
   color: #fff;
   -webkit-box-flex: 1;
