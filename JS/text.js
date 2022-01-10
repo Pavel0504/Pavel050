@@ -27,10 +27,6 @@ opens.forEach((open) =>
   })
 );
 
-function clearFields() {
-  document.getElementById("text").reset();
-}
-
 closes.forEach((close) =>
   close.addEventListener("click", () => {
     card.style.display = "none";
